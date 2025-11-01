@@ -17,8 +17,8 @@ class HomePageData extends ChangeNotifier {
         userAvatarUrl =
             'https://www.gstatic.com/flutter-onestack-prototype/genui/example_1.jpg',
         mainImageUrl =
-            'https://i.imgur.com/xNdRovc.jpeg', // IMAGEM QUE QUERO AUMENTAR
-        mainImageOverlayText = 'AIRSOFT';
+            'https://i.imgur.com/xNdRovc.jpeg',
+        mainImageOverlayText = '';
 }
 
 // 2. O Widget Raiz (Root Widget)
@@ -198,7 +198,7 @@ class _MainContentCard extends StatelessWidget {
             children: <Widget>[
               Image.network(
                 homePageData.mainImageUrl,
-                fit: BoxFit.contain,
+                fit: BoxFit.cover,
                 width: double.infinity,
                 height: double.infinity,
                 errorBuilder: (BuildContext context, Object error,
